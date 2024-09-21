@@ -1,0 +1,11 @@
+---
+- name: variables
+  hosts: localhost
+  vars:
+    name: srikanth
+    place: karimnagar
+    distance: 172
+  tasks:
+    - name: learning variables
+      ansible.builtin.debug:
+      debug: "Hi am {{name}} and I am from {{place}}. It's {{distance}} kms far away"
