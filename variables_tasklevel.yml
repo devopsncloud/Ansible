@@ -8,6 +8,6 @@
   tasks:
     - name: learning variables
       vars:
-        name: Devanshi
+        name: "  "
       ansible.builtin.debug:
         msg: "Hi am {{name}} and I am from {{place}}. It's {{distance}} kms far away"
