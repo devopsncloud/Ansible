@@ -5,6 +5,6 @@
 localhost
 
 [localhost:vars]
-name: srikanth
-place: karimnagar
-distance: 168
+name=srikanth
+place=karimnagar
+distance=168
