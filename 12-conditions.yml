@@ -7,3 +7,7 @@
     ansible.builtin.command: id roboshop
     register: user # user is a variable here
     ignore_errors: true
+  - name: Print variable name
+    ansible.builtin.debug:
+      msg: "The user is: {{user}}"
+      
