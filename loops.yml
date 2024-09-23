@@ -1,0 +1,13 @@
+---
+- name: loops
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: print the valuess in loop
+    ansible.builtin.debug:
+      msg: "Hello {{item}}"  #item is a default keyword need to be used while looping
+    loop:
+    - Ramesh
+    - Suresh
+    - Naresh 
+    - Rajesh
