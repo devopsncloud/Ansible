@@ -2,28 +2,27 @@
 - name: Data Types
   hosts: localhost
   vars:
-    Name: Srikanth #Key:value pair
-    Skills:        #list
-    - git and github
-    - ansible
-    - jenkins
-    - gitlab
-    Experience:  #map
+    Name: Srikanth
+    Skills:
+      - git and github
+      - ansible
+      - jenkins
+      - gitlab
+    Experience:
       Devops: 2
       Temenos-T24: 4
       Worksoft: 2
-    Learning: true #Boolean
+    Learning: true
   tasks:
     - name: print keyvalue pair
-      ansible.inbuilt.debug:
+      ansible.builtin.debug:
         msg: "name: {{Name}}"
-        
     - name: print list
-      ansible.inbuilt.debug:
+      ansible.builtin.debug:
         msg: "skills: {{Skills}}"
     - name: print map
-      ansible.inbuilt.debug:
+      ansible.builtin.debug:
         msg: "Experience: {{Experience}}"
     - name: Print Boolean
-      ansible.inbuilt.debug:
+      ansible.builtin.debug: null
       msg: "Is he learning really: {{Learning}}"
