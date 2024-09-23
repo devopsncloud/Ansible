@@ -1,2 +1,10 @@
 [web]
 3.80.168.106
+
+[localhost]
+localhost
+
+[localhost:vars]
+name: srikanth
+place: karimnagar
+distance: 168

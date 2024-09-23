@@ -1,0 +1,7 @@
+---
+- name: vars form inventory file
+  hosts: localhost
+  tasks:
+  - name: check variables
+    ansible.builtin.debug:
+        msg: "Hi am {{name}} and I am from {{place}}. It's {{distance}} kms far away"
