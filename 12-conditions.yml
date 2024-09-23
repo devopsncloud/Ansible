@@ -7,6 +7,7 @@
     ansible.builtin.command: id roboshop
     register: user # user is a variable here
     ignore_errors: true
+    
   - name: Print variable name
     ansible.builtin.debug:
       msg: "The user is: {{user}}"
@@ -14,3 +15,8 @@
   - name: print exit status or return code
     ansible.builtin.debug:
       msg: "Exit Status is: {{user.rc}}"
+
+  - name: create user
+    ansible.builtin.user:
+      name: roboshop
+    when: user.rc != 0 #condition
