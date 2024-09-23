@@ -4,5 +4,5 @@
   tasks:
     - name: learning variables
       ansible.builtin.debug:
-        msg: "Hi {{PERSION}} ! Good {{WISHES}}"
+        msg: "Hi {{PERSON}} ! Good {{WISHES}}"
 
