@@ -11,3 +11,13 @@
     - Suresh
     - Naresh 
     - Rajesh
+  
+  - name: Install the packages
+    ansible.builtin.package:
+    name: "{{item}}"
+    state: present 
+    loop:
+    - git 
+    - nginx 
+    - mysql
+    - postfix
