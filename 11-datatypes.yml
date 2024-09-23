@@ -17,6 +17,7 @@
     - name: print keyvalue pair
       ansible.inbuilt.debug:
         msg: "name: {{Name}}"
+        
     - name: print list
       ansible.inbuilt.debug:
         msg: "skills: {{Skills}}"
