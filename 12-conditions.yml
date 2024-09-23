@@ -1,0 +1,8 @@
+---
+- name: Conditions
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: Check user exits or not
+    ansible.builtin.command: id roboshop
+    register: user # user is a variable here
