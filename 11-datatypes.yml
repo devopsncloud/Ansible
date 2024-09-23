@@ -25,4 +25,4 @@
         msg: "Experience: {{Experience}}"
     - name: Print Boolean
       ansible.builtin.debug: 
-      msg: "Is he learning really: {{Learning}}"
+        msg: "Is he learning really: {{Learning}}"
