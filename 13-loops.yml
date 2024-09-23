@@ -14,8 +14,8 @@
   
   - name: Install the packages
     ansible.builtin.package:
-    name: "{{item}}"
-    state: present 
+      name: "{{item}}"
+      state: present 
     loop:
     - git 
     - nginx 
