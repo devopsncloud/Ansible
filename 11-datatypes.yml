@@ -16,13 +16,13 @@
   tasks:
     - name: print keyvalue pair
       ansible.inbuilt.debug:
-        msg: "{{Name}}"
+        msg: "name: {{Name}}"
     - name: print list
       ansible.inbuilt.debug:
-        msg: "{{Skills}}"
+        msg: "skills: {{Skills}}"
     - name: print map
       ansible.inbuilt.debug:
-        msg: "{{Experience}}"
+        msg: "Experience: {{Experience}}"
     - name: Print Boolean
       ansible.inbuilt.debug:
       msg: "Is he learning really: {{Learning}}"
